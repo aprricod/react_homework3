@@ -12,3 +12,6 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+
+
+// какие-то изменения в ветке master для теста
