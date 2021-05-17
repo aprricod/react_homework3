@@ -12,3 +12,5 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+
+// изменения в ветке hw3-ex2 для теста
