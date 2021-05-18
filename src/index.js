@@ -12,3 +12,5 @@ ReactDOM.render(
 );
 
 reportWebVitals();
+
+// тестовые изменения для ветки hw3-ex4
