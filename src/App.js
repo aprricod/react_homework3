@@ -10,6 +10,4 @@ function App() {
   );
 }
 
-setInterval(App, 30000);
-
 export default App;
