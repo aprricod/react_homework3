@@ -5,17 +5,19 @@ export default function App() {
   const data = [
     {
       title: "Италия",
-      desc: "описание страны",
+      desc: "описание страны1",
     },
     {
       title: "Франция",
-      desc: "описание страны",
+      desc: "описание страны2",
     },
     {
       title: "Румыния",
-      desc: "описание страны",
+      desc: "описание страны3",
     },
   ];
+
+  console.log(data);
   const newCard = ({ title, desc }) => {
     return (
       <div
@@ -26,12 +28,14 @@ export default function App() {
           width: "30%",
           borderRadius: "10px",
         }}
+        key={(desc.toString(), title.toString())}
       >
         <h2>{title}</h2>
         <p>{desc}</p>
       </div>
     );
   };
+
   return (
     <div className="App">
       <header>
