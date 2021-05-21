@@ -29,9 +29,19 @@ class List extends React.Component {
     };
     return (
       <div className="App">
+        <header>
+          <h1>Блог о путешествиях</h1>
+        </header>
+        <img
+          style={{
+            maxWidth: "100%",
+          }}
+          src="https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg"
+          alt="logo"
+        />
         <form onSubmit={this.handleSubmit}>
           <label>
-            <p>Выберите страну из списка ниже чтобы увидеть описание: </p>
+            <p>Выберите страну из списка ниже чтобы увидеть ее описание: </p>
             <select value={this.state.value} onChange={this.handleChange}>
               <option value=""></option>
               <option value="italy">Италия</option>
