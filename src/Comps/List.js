@@ -31,7 +31,7 @@ class List extends React.Component {
       <div className="App">
         <form onSubmit={this.handleSubmit}>
           <label>
-            <p>Выберите тему блога: </p>
+            <p>Выберите страну из списка ниже чтобы увидеть описание: </p>
             <select value={this.state.value} onChange={this.handleChange}>
               <option value=""></option>
               <option value="italy">Италия</option>
@@ -47,7 +47,7 @@ class List extends React.Component {
           ) : this.state.value === "romania" ? (
             <p>{countryData.romania}</p>
           ) : (
-            <p>Тема не выбрана</p>
+            <p>Страна не выбрана</p>
           )}
         </form>
       </div>
@@ -70,10 +70,6 @@ export default List;
 //     label: "Banana",
 //     value: "banana",
 //   },
-//   {
-//     label: "Pineapple",
-//     value: "pineapple",
-//   },
 // ];
 
 // class List extends React.Component {
@@ -82,7 +78,7 @@ export default List;
 //     this.state = {
 //       fruit: "banana",
 //     };
-//     // this.handlerClick = this.handlerClick.bind(this);
+//     this.handlerClick = this.handlerClick.bind(this);
 //     this.handlerChange = this.handlerChange.bind(this);
 //   }
 
